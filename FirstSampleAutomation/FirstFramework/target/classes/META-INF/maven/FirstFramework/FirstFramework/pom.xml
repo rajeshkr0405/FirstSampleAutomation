@@ -1,0 +1,61 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>FirstFramework</groupId>
+  <artifactId>FirstFramework</artifactId>
+  <version>1.0.2</version>
+  <!-- <version>0.0.1-SNAPSHOT</version> -->
+  <packaging>jar</packaging>
+
+  <name>FirstFramework</name>
+  <url>http://maven.apache.org</url>
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <selenium.standalone>4.2.2</selenium.standalone>
+    <org.testng>7.8.0</org.testng>
+    <maven.compiler.source>11</maven.compiler.source>
+    <maven.compiler.target>11</maven.compiler.target>
+    <org.apache.maven.plugin.maven-compiler-plugin.version>3.7.0</org.apache.maven.plugin.maven-compiler-plugin.version>
+    <org.codehaus.mojo.exec-maven-plugin.version>1.6.0</org.codehaus.mojo.exec-maven-plugin.version>
+    <org.apache.maven.plugins.maven-surefire-plugin.version>2.22.0</org.apache.maven.plugins.maven-surefire-plugin.version>
+  </properties>
+
+  <dependencies>
+  <!-- Selenium Dependency -->
+  <dependency>
+  <groupId>org.seleniumhq.selenium</groupId>
+  <artifactId>selenium-java</artifactId>
+  <version>${selenium.standalone}</version>
+  </dependency>
+  <!-- Testng Dependency -->
+  <dependency>
+  <groupId>org.testng</groupId>
+  <artifactId>testng</artifactId>
+  <version>${org.testng}</version>
+  </dependency>
+  <dependency>
+  <groupId>org.apache.poi</groupId>
+  <artifactId>poi</artifactId>
+  <version>3.16</version>
+  </dependency>
+  <!-- TFS Result Upoad Dependency -->
+  <dependency>
+  <groupId>com.aventstack</groupId>
+  <artifactId>extentreports</artifactId>
+  <version>3.1.5</version>
+  </dependency>
+  <dependency>
+  <groupId>org.json</groupId>
+  <artifactId>json</artifactId>
+  <version>20180130</version>
+  </dependency>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>4.12</version>
+      <scope>test</scope>
+    </dependency>
+  </dependencies>
+</project>

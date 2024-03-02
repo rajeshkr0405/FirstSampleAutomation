@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<suite name="suite" parallel="methods" thread-count="1">
+<test name="Test">
+<parameter name="ExeBroser" value="Edge"/>
+<classes>
+<class name="testScripts.TestNGTestCases">
+<methods>
+<!-- <include name="Test"/> -->
+</methods>
+</class>
+</classes>
+</test>
+</suite>
